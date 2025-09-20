@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_parking_fines
+    description: "Clean staging table for parking fines"
+    columns:
+      - name: plate
+        tests:
+          - not_null
+      - name: summons_number
+        tests:
+          - not_null
+      - name: issue_date
+        tests:
+          - not_null
