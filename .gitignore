@@ -67,3 +67,8 @@ htmlcov/
 
 # Other
 *.swp
+
+# dbt artifacts
+target/        # compiled SQL, docs, manifest, run results
+dbt_modules/   # installed dbt packages (like dbt_utils)
+dbt_packages/  # newer package directory (instead of dbt_modules)
