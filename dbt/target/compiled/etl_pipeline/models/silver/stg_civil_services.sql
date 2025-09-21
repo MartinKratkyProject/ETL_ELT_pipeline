@@ -27,6 +27,3 @@ and first_name is not null
 and last_name is not null
 and adj_fa is not null
 and adj_fa::numeric between 0 and 100
-
-
-

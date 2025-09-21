@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: stg_civil_services
+    description: "Clean staging table for civil services"
+    columns:
+      - name: exam_no
+        tests:
+          - not_null
+      - name: list_no
+        tests:
+          - not_null
+      - name: first_name
+        tests:
+          - not_null
+      - name: last_name
+        tests:
+          - not_null
+      - name: adj_fa
+        tests:
+          - not_null
+          - between:
+              min_value: 0
+              max_value: 100

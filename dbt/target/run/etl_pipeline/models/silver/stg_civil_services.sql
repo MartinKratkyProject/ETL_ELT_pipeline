@@ -1,4 +1,9 @@
-with raw_civil_services as (
+
+  create view "warehouse_db"."silver"."stg_civil_services__dbt_tmp"
+    
+    
+  as (
+    with raw_civil_services as (
     select *
     from raw_data.table_nyc_civil_services
 )
@@ -27,6 +32,4 @@ and first_name is not null
 and last_name is not null
 and adj_fa is not null
 and adj_fa::numeric between 0 and 100
-
-
-
+  );
