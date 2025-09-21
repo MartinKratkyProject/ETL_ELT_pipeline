@@ -27,5 +27,3 @@ where vehicle_license_number is not null
 and permit_license_number is not null
 and dmv_license_plate_number is not null
 and vehicle_vin_number is not null
-
-

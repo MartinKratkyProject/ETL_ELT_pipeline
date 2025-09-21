@@ -1,4 +1,9 @@
-with raw_fire_vihecles as (
+
+  create view "warehouse_db"."silver"."stg_fire_vehicles__dbt_tmp"
+    
+    
+  as (
+    with raw_fire_vihecles as (
     select *
     from raw_data.table_nyc_fire_vihecles
 )
@@ -27,5 +32,4 @@ where vehicle_license_number is not null
 and permit_license_number is not null
 and dmv_license_plate_number is not null
 and vehicle_vin_number is not null
-
-
+  );

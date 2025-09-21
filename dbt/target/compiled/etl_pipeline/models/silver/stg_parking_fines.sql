@@ -20,4 +20,3 @@ from raw_parking
 where plate is not null
 and summons_number is not null
 and issue_date is not null
--- and amount_due::numeric > 200
