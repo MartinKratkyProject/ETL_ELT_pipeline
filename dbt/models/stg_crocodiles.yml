@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_crocodiles
+    description: "Clean staging table for crocodiles"
+    columns:
+      - name: observation_id
+        tests:
+          - not_null
+          - unique
+      - name: common_name
+        tests:
+          - not_null
+
