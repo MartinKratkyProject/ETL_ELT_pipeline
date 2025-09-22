@@ -75,3 +75,4 @@ dbt_packages/  # newer package directory (instead of dbt_modules)
 
 # personal files
 sql_queries.sql
+
