@@ -3,6 +3,8 @@ version: 2
 models:
   - name: stg_parking_fines
     description: "Clean staging table for parking fines"
+    tests:
+      - amounts_balance
     columns:
       - name: plate
         tests:
@@ -13,3 +15,18 @@ models:
       - name: issue_date
         tests:
           - not_null
+      - name: fine_amount
+        tests:
+          - greater_than
+      - name: penalty_amount
+        tests:
+          - greater_than
+      - name: interest_amount
+        tests:
+          - greater_than
+      - name: reduction_amount
+        tests:
+          - greater_than
+      - name: payment_amount
+        tests:
+          - greater_than

@@ -20,4 +20,10 @@ from raw_parking
 where plate is not null
 and summons_number is not null
 and issue_date is not null
-
+and fine_amount::numeric >= 0
+and penalty_amount::numeric >= 0
+and interest_amount::numeric >= 0
+and reduction_amount::numeric >= 0
+and payment_amount::numeric >= 0
+and amount_due::numeric >= 0
+and fine_amount::numeric + penalty_amount::numeric + interest_amount::numeric - reduction_amount::numeric - payment_amount::numeric = amount_due::numeric
