@@ -1,0 +1,12 @@
+warehouse:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: "{{ env_var('WAREHOUSE_PG_HOST') }}"
+      user: "{{ env_var('WAREHOUSE_PG_USER') }}"
+      password: "{{ env_var('WAREHOUSE_PG_PASSWORD') }}"
+      port: "{{ env_var('WAREHOUSE_PG_PORT') | int }}"
+      dbname: "{{ env_var('WAREHOUSE_PG_DB') }}"
+      schema: silver                 
+      threads: 1

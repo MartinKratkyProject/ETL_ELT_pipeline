@@ -1,0 +1,9 @@
+version: 2
+
+models:
+  - name: stg_job_applications
+    description: "Clean staging table for job applications"
+    columns:
+      - name: col1
+        tests:
+          - not_null

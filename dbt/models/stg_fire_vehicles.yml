@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_fire_vehicles
+    description: "Clean staging table for fire vehicles"
+    columns:
+      - name: vehicle_license_number
+        tests:
+          - not_null
+      - name: permit_license_number
+        tests:
+          - not_null
+      - name: dmv_license_plate_number
+        tests:
+          - not_null
+      - name: vehicle_vin_number
+        tests:
+          - not_null
