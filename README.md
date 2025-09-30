@@ -20,21 +20,6 @@ Cleansed and transformed datasets are prepared for downstream **analytics and re
 - Connection and environment configuration with `.env`, `servers.json`, and `create_connections.sh`.  
 - `init.sql` for database initialization.  
 
----
-
-## Project Structure
-
-.
-├── airflow/                 # Airflow DAGs and configs
-├── dbt/                     # dbt models, tests, and project configs
-├── scripts/
-│   ├── create_connections.sh
-│   └── servers.json
-├── init.sql                 # Database initialization script
-├── .env                     # Environment variables
-├── docker-compose.yml        # Docker services configuration
-└── README.md
-
 
 ## Requirements
 
@@ -97,4 +82,3 @@ Cleansed and transformed datasets are prepared for downstream **analytics and re
 * Add support for cloud storage (e.g., S3, GCS) as additional raw data sources.
 * Implement monitoring/alerting for pipeline health.
 * Extend dbt testing suite with business-level validations.
-
